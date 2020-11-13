@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  
+  position: relative;
+}
+.title {
+  position: absolute;
+  top:30%;
+  width:100%;
+  text-align: center;
+  font-size: 40px;
+  color:white;  
+}
+.btn_mywork {
+  position:relative;
+  text-align: center;
+  font-size: 30px;
+  width:200px;
+  height:60px;
+  margin:auto;
+
+  z-index: 1200;
+}
+.videoTag {
+  z-index: -1;
+  position: relative;
+  width:100%;
+}
+
