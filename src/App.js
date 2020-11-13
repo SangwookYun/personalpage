@@ -7,6 +7,7 @@ import {Events, animateScroll as scroll, scroller } from 'react-scroll'
 import React, {Component} from 'react'
 import sample from './img/test2.mp4';
 import About from './Modules/About'
+import Footer from './Modules/Footer'
 
 class App extends Component {
   constructor(props) {
@@ -87,8 +88,8 @@ class App extends Component {
           </video>
           
         <About></About>
-        {/* <Project></Project>
-        <Footer></Footer> */}
+        {/* <Project></Project> */}
+        <Footer></Footer>
         
         </div>
       </div>
