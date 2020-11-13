@@ -1,0 +1,35 @@
+#aboutMe {
+    background-color: red;
+    
+    height:1000px;
+  }
+  .section_title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  .icon_strength {
+    width:180px;
+    height:150px;
+  }
+  
+  .test3 {
+    margin:0 auto;
+    text-align: center;
+  }
+  .title_char {
+    font-size: 30px;
+    color:gray;
+    font-weight: bold;
+  }
+  .title_myself {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .contents_myself {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    /* border:1px solid black; */
+    width:100%;
+  }
+  

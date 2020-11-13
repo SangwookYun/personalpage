@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
-
+import 'bootstrap/dist/css/bootstrap.css'
 import {Row, Col, Button} from 'react-bootstrap'
 import {Events, animateScroll as scroll, scroller } from 'react-scroll'
 import React, {Component} from 'react'
 import sample from './img/test2.mp4';
-
+import About from './Modules/About'
 
 class App extends Component {
   constructor(props) {
@@ -85,11 +85,11 @@ class App extends Component {
           <video className='videoTag' autoPlay muted>
             <source src={sample} type='video/mp4' />
           </video>
-{/*           
+          
         <About></About>
-        <Project></Project>
-        <Footer></Footer>
-         */}
+        {/* <Project></Project>
+        <Footer></Footer> */}
+        
         </div>
       </div>
       
