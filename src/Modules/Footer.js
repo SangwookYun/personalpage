@@ -35,6 +35,12 @@ class Footer extends Component {
               
             </div>
             <div>
+            https://github.com/SangwookYun
+            </div>
+            <div>
+            https://www.linkedin.com/in/yun-sangwook-983771ab/
+            </div>
+            <div>
             7835 13th Ave, Burnaby
               Vancouver, BC
               Sangwook Yun
