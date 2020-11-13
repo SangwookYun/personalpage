@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { render } from 'react-dom';
 import {Container, Row, Col} from 'react-bootstrap'
 // import { GrLinkedin } from 'react-icons';
-import { SocialIcon } from 'react-social-icons';
+// import { SocialIcon } from 'react-social-icons';
 
 import './Footer.css'
 
@@ -28,10 +28,10 @@ class Footer extends Component {
             </div>  
             <div className = "footerIcon">
               
-              <SocialIcon className = "icons" url="https://www.linkedin.com/in/yun-sangwook-983771ab/" />
+              {/* <SocialIcon className = "icons" url="https://www.linkedin.com/in/yun-sangwook-983771ab/" /> */}
               {/* <SocialIcon className = "icons"  onClick = {this.moveTo} network="email" />
               <SocialIcon className = "icons"  network="sharethis"/> */}
-              <SocialIcon className = "icons" url="https://github.com/SangwookYun" network= "github"/>
+              {/* <SocialIcon className = "icons" url="https://github.com/SangwookYun" network= "github"/> */}
               
             </div>
             <div>
