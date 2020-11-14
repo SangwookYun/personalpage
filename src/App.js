@@ -7,6 +7,7 @@ import {Events, animateScroll as scroll, scroller } from 'react-scroll'
 import React, {Component} from 'react'
 import sample from './img/test2.mp4';
 import About from './Modules/About'
+import NavBar from './Modules/Navbar'
 import Footer from './Modules/Footer'
 import Project from './Modules/Project'
 
@@ -71,7 +72,7 @@ class App extends Component {
         
         <div>
           
-        {/* <NavBar></NavBar> */}
+        <NavBar></NavBar>
           <Row className = "title">
             <Col xl ={{span:6, offset:3}} style={{marginBottom:"20px"}}> 
               <h2> Hello, My name is Sangwook Yun</h2>
@@ -80,7 +81,7 @@ class App extends Component {
               <h4> I'm a Software Engineer</h4>
             </Col>
             <Col xl ={{span:4, offset:4}} style={{marginBottom:"20px"}}>
-              <Button className = "btn_primary" onClick = {()=>scroll.scrollTo(1300)}> About Me</Button>
+              <Button className = "btn_primary" onClick = {()=>scroll.scrollTo(1000)}> About Me</Button>
             </Col>
        
           </Row>
