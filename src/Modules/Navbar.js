@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Form} from 'react-bootstrap'
-import { makeStyles } from '@material-ui/core/styles';
-import menuIcon from '@material-ui/icons/Menu';
+import {Container, Row, Col} from 'react-bootstrap'
 import "./Navbar.css";
 
-import {Events, animateScroll as scroll, scroller } from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
 
 class NavBar extends Component {
     componentDidMount() {
@@ -15,7 +13,6 @@ class NavBar extends Component {
           window.removeEventListener('scroll', this.handleScroll);
       }
       handleScroll = (e) => {
-        let element = e.target;
         
         console.log(window.scrollY)
         if(window.scrollY<=500) {
@@ -30,12 +27,6 @@ class NavBar extends Component {
     }
 
     render() {
-        // const style= {
-        //     backgroundImage: `url(${img_header})`,
-        //     width:"100%",
-        //     height:"500px",
-        //     backgroundSize:"cover"
-        // }
  
         return (
             <Container fluid>
