@@ -1,6 +1,7 @@
 import React, {Component, useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import {Modal, Button, Row, Col} from 'react-bootstrap'
+import Linkify from 'react-linkify'
 import './SingleProject.css'
 import {
   Card, CardImg, CardText, CardBody,
@@ -57,11 +58,14 @@ function SingleProject(props) {
                       </div>
                       <div className = "webpage_modal">
                         
-                        <b>WEBPAGE :</b> {props.webpage} 
+                         <Linkify><b>WEBPAGE :</b>
+                          {props.webpage}</Linkify> 
                         
                       </div>
                       <div className = "github_modal">
-                        <b>GITHUB :</b> {props.github}
+                        <Linkify>
+                          <b>GITHUB :</b> {props.github}
+                        </Linkify>
                       </div>
                     </div>
                   </Col>
