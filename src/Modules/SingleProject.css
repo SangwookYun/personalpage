@@ -10,16 +10,56 @@
   text-align: center;
 }
 .cardtitle {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 20px;
 }
 
 .img_modal {
-  width:80%;
+  width:60%;
   border:1px solid black;
 }
 
+.title_modal {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: auto;
+  width:100%;
+  font-size: 30px;
+  font-weight: bold;
+}
 .contents_modal {
+
   text-align: center;
   margin:auto;
+}
+.body_modal {
+  background-color:lightgray;
+  margin-top:10px;
+
+}
+
+.subHeader {
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.description_modal {
+  font-family: 'Roboto', sans-serif;
+  margin-top:10px;
+  margin-bottom:5px;
+}
+.tech_modal {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color:rgb(30, 24, 141);
+  font-weight: bold;
+  margin-bottom:10px;
+}
+.webpage_modal {
+
+}
+.github_modal {
+
 }
