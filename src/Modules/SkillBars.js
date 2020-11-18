@@ -8,13 +8,23 @@ class SkillBars extends Component {
         super(props);
         this.state = { collapsed: true };       
     }
-
+    //   componentWillUnmount() {
+    //       window.removeEventListener('scroll', this.handleScroll);
+    //   }
+      
     componentDidMount() {
-        setTimeout(() => {
-        this.setState({ collapsed: false })
-        }, 1000);
+        window.addEventListener('scroll', this.handleScroll_skillbar);
+      
     }
-
+    handleScroll_skillbar = (e) => {
+        
+        console.log(window.scrollY)
+        if(window.scrollY>=500) {
+            setTimeout(() => {
+                this.setState({ collapsed: false })
+                }, 1000);
+        }
+    }
     render() {
         const { collapsed } = this.state;
         const { hue, saturation, skills } = this.props;
@@ -22,7 +32,6 @@ class SkillBars extends Component {
         return(  
             <div id="app" className={`container ${collapsed ? 'collapsed' : ''}`}>
                 <h3>{this.props.title}</h3>
-                {/* <p>Set the Hue and Saturation on the <code>&lt;SkillBars /&gt;</code> instance and let the component deal with the shades</p> */}
                 <hr/>
                 <ul className="skills">
                 {skills.map((skill, index) => 

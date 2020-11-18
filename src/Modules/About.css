@@ -25,11 +25,15 @@
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5px;
     font-size: 18px;
+    transition: color 300ms ease-in-out;
   }
   .contents_myself {
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     /* border:1px solid black; */
     width:100%;
+    transition: color 300ms ease-in-out;
   }
-  
+  .collapsed_about {
+    color:white;
+  }
