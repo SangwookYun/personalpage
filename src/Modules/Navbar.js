@@ -16,7 +16,7 @@ class NavBar extends Component {
         
         console.log(window.scrollY)
         if(window.scrollY<=500) {
-
+            
             document.getElementById('nav_bar').classList.remove('black');
             console.log("top")
         }else if(window.scrollY>500) {

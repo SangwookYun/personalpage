@@ -13,3 +13,13 @@
   font-weight: bold;
   font-size: 20px;
 }
+
+.img_modal {
+  width:80%;
+  border:1px solid black;
+}
+
+.contents_modal {
+  text-align: center;
+  margin:auto;
+}

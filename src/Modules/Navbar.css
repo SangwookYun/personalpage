@@ -22,9 +22,11 @@
 }
 .navbar-ul li {
     list-style:none;
+    height:80px;
+    /* background-color:red; */
 }
 .navbar-ul li p{
-    line-height:80px;
+    line-height:70px;
     font-size: 20PX;
     color:WHITE;
     padding:5px 20px;
@@ -54,4 +56,9 @@
     margin:auto;
     text-align: center;
 
+}
+
+.nav-item:hover {
+    border:1px solid white;
+    border-radius: 50%;
 }
