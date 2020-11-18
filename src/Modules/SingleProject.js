@@ -12,10 +12,6 @@ function SingleProject(props) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const test = (props)=> {
-
-
-  }
   
 
   return (
@@ -36,28 +32,58 @@ function SingleProject(props) {
       </Card>
       <Modal size ="lg" show={show} onHide={handleClose}>
           <Modal.Header style ={{textAlign:"center"}}closeButton>
-            <Modal.Title style ={{textAlign:"center"}}>{props.title}</Modal.Title>
+            <div className="title_modal" style ={{textAlign:"center"}}>{props.title}</div>
           </Modal.Header>
           <Modal.Body>
             <Row className = "contents_modal">
               <Col xl={12}>
-                  <img className = "img_modal" style = {{width:"100%", }}src = {props.bgImage}></img>
+                  <img className = "img_modal" src = {props.bgImage}></img>
               </Col>
             </Row>
-            <Row>
-              {props.type}
-              {props.contents}
-              {props.Technology}
-              {/* {props.github}
-              {props.url} */}
-
+            <Row className = "body_modal"> 
+                <Row>
+                <Col xl = {{span:10, offset:1}}>
+                    <div>
+                      <div className= "subHeader">
+                        {props.type} |   {props.period} 
+                      </div>         
+                    </div>
+                    <div className = "sub_contents_modal">
+                      <div className = "description_modal">
+                        {props.description}
+                      </div>
+                      <div className = "tech_modal">
+                        {props.Technology}
+                      </div>
+                      <div className = "webpage_modal">
+                        
+                        <b>WEBPAGE :</b> {props.webpage} 
+                        
+                      </div>
+                      <div className = "github_modal">
+                        <b>GITHUB :</b> {props.github}
+                      </div>
+                    </div>
+                  </Col>
+              </Row>
+              <Row style = {{width:"100%", textAlign:"center"}}>
+                <Col xl={12}>
+                  <Button style = {{margin:"auto", marginBottom:"10px", marginTop:"10px"}} variant="danger" onClick={handleClose}>
+                    Close
+                  </Button>   
+                </Col>
+                
+              </Row>
+              
             </Row>
+              
+              
+
+
           </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
+          {/* <Modal.Footer>
+         
+          </Modal.Footer> */}
         </Modal>
     </div>
       
